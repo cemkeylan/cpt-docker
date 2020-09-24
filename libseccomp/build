@@ -1,7 +1,5 @@
 #!/bin/sh -e
 
-# sed -i '/<linux\/prctl.h>/d' src/system.h
-
 ./configure \
     --prefix=/usr
 
