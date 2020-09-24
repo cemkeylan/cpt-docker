@@ -45,7 +45,7 @@ go clean -modcache
 out "Building daemon"
 
 cdgopath docker-ce/components/engine github.com/docker/docker
-DOCKER_GITCOMMIT=$2 DOCKER_BUILDTAGS='seccomp apparmor' VERSION=$2-ce hack/make.sh binary
+DOCKER_GITCOMMIT=$2 DOCKER_BUILDTAGS='seccomp' VERSION=$2-ce hack/make.sh binary
 )
 
 
