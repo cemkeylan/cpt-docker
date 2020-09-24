@@ -9,7 +9,7 @@ REQUIREMENTS
 
 For docker to work, you will need to do some extra work:
 
-- Btrfs-tools, Go, and LVM2 (supplied by KISS Community)
+- Btrfs-tools, iptables, Go, and LVM2 (supplied by KISS Community)
 - Kernel configuration (See Gentoo Wiki Page[1])
 
 
@@ -18,9 +18,8 @@ TODO
 
 - [x] Build all packages
 - [x] Add runit services for containerd
-- [ ] Actually run dockerd
-- [ ] Add runit services for dockerd
-- [ ] ???
+- [x] Actually run dockerd
+- [x] Add runit services for dockerd
 
 
 [1]: https://wiki.gentoo.org/wiki/Docker#Kernel
