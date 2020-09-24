@@ -2,5 +2,4 @@ https://github.com/docker/docker-ce/archive/v19.03.13.tar.gz                    
 https://github.com/docker/libnetwork/archive/026aabaa659832804b01754aaadd2c0f420c68b6.tar.gz   libnetwork
 https://github.com/krallin/tini/archive/fec3683b971d9c3ef73f284f176672c44b448662.tar.gz        tini
 https://github.com/docker/app/archive/v0.9.1-beta3.tar.gz                                      app
-git+https://github.com/spf13/cobra                                                             cobra
-git+https://github.com/docker/buildx                                                           buildx
+files/run
