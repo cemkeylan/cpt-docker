@@ -67,7 +67,7 @@ cmake -B build \
     -DCMAKE_INSTALL_PREFIX=/usr
 
 cmake --build   build
-install -Dm755 build/tini-static "$1/usr/bin/tini"
+install -Dm755 build/tini-static "$1/usr/bin/docker-init"
 )
 
 install -Dm755 libnetwork/proxy "$1/usr/bin/docker-proxy"
