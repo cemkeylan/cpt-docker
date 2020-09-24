@@ -1,0 +1,8 @@
+#!/bin/sh -e
+
+export GOPATH=$PWD/gopath
+trap "go clean -modcache" EXIT INT
+go mod vendor
+
+make
+install -Dm755 runc "$1/usr/bin/runc"

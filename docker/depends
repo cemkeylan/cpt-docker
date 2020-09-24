@@ -1,0 +1,7 @@
+bash        make
+btrfs-progs
+cmake       make
+containerd
+libseccomp
+lvm2
+runc

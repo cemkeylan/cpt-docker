@@ -1,0 +1,17 @@
+#!/bin/sh -e
+
+export GOPATH=$PWD
+trap "go clean -modcache" EXIT INT
+
+ln -s src/github.com/containerd/containerd srcdir
+
+(
+cd srcdir
+
+make VERSION="v$2"
+make DESTDIR="$1/usr" install
+)
+
+install -Dm755 run "$1/etc/sv/containerd/run"
+install -Dm755 run "$1/etc/sysmgr/containerd"
+ln -s /run/runit/supervise.containerd "$1/etc/sv/containerd/supervise"
