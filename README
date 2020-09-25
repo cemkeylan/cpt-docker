@@ -22,4 +22,14 @@ TODO
 - [x] Add runit services for dockerd
 
 
+Installing docker-compose
+-------------------------
+
+docker-compose isn't packaged as it depends on lots of other python
+packages. You can install docker-compose through 'pip'
+
+
+    pip3 install docker-compose
+
+
 [1]: https://wiki.gentoo.org/wiki/Docker#Kernel
