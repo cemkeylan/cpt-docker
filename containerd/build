@@ -1,12 +1,14 @@
 #!/bin/sh -e
 
 export GOPATH=$PWD
+export GO111MODULE=auto
 trap "go clean -modcache" EXIT INT
 
 ln -s src/github.com/containerd/containerd srcdir
 
 (
 cd srcdir
+export GOFLAGS="-trimpath -mod=readonly -modcacherw"
 
 make VERSION="v$2"
 make DESTDIR="$1/usr" install
